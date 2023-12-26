@@ -126,7 +126,7 @@ _____
 navegue até o diretório e rode ```npm install```
 
 Instale também as seguintes dependências
-```bash 
+```bash
 npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0
 ```
 
@@ -134,6 +134,8 @@ Após isso, rode o comando npm start e pressione w, para abrir o app em seu brow
 
 Por útimo, instale o axios, que será responsável por fazer as chamadas à API.
 
-```bash npm install axios   ```
+```bash
+npm install axios   
+```
 
 ______________
