@@ -116,4 +116,24 @@ Verifique a saída do seu terminal se o seguinte código foi impresso:
 
 Se a saída foi algo parecido, parabéns, você já tem o ambiente inicial configurado.
 
+
+#### Criando o app
+
+Execute o comando abaixo dentro da pasta do seu projeto, no nível irmão ao diretório server, criado anteriormente.
+```bash npx create-expo-app app  ```
 _____
+
+navegue até o diretório e rode ```npm install```
+
+Instale também as seguintes dependências
+```bash 
+npx expo install react-native-web@~0.19.6 react-dom@18.2.0 @expo/webpack-config@^19.0.0
+```
+
+Após isso, rode o comando npm start e pressione w, para abrir o app em seu browser, porém, se você tiver o ambiente android ou ios configurado, por selecionar seu target à vontade.
+
+Por útimo, instale o axios, que será responsável por fazer as chamadas à API.
+
+```bash npm install axios   ```
+
+______________
