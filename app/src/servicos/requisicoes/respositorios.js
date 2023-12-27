@@ -1,9 +1,9 @@
 import api from "../api";
 
 
-export async function buscarRepositorios(id) {
+export async function buscarRepositorios(login) {
     try {
-        const resultado = await api.get("repos?postId=" + id)
+        const resultado = await api.get(`/users/${login}/repos`);
         return resultado.data
     } catch (error) {
         console.log(error)
@@ -13,7 +13,7 @@ export async function buscarRepositorios(id) {
 
 export async function salvarRepositorio(postId, name, data, id) {
     try {
-        await api.put(`repos/${id}`, {
+        await api.put(`/repos/${id}`, {
             name, 
             postId, 
             id, 

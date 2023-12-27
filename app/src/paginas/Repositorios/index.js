@@ -10,7 +10,7 @@ export default function Repositorios({ route, navigation }) {
 
     useEffect(() => {
         async function fetchData() {
-            const resultado = await buscarRepositorios(route.params.id)
+            const resultado = await buscarRepositorios(route.params.login)
             setRepo(resultado)
         }
         fetchData()
